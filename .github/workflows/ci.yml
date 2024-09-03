@@ -207,7 +207,7 @@ jobs:
         if: ${{ always() }}
       - name: Download coverage data
         if: ${{ always() }}
-        uses: actions/download-artifact@v3.0.1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: coverage-data
       - name: Combine coverage and fail if it's <85%.
